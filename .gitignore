@@ -9,3 +9,6 @@ TAGS
 *.swn
 *.swo
 *.swp
+
+settings.rkt
+token

@@ -8,3 +8,14 @@
      @meta[name: "viewport" 'content: "width=device-width, initial-scale=1"]
      @link[href: "css/custom.css" rel: "stylesheet"]
      @title[v]{ - Andy's Blog }})
+
+@(define (page #:title title . content)
+  (list
+    @doctype{html}
+    @html[lang: "en"]{
+      @header{title}
+      @body{
+        @;navbar{title}
+        @content
+        @;footer{}
+  }}))

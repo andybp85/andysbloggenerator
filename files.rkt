@@ -23,7 +23,7 @@
 (define html-file-table
   (for/list ([f (in-list (dict-keys file-table))]
              [v (in-list (dict-values file-table))])
-    (cons f (path-replace-suffix v ".html"))))
+    (cons f (path-replace-suffix (build-path 'up v) ".html"))))
 
 (define current-image-files* '())
 
