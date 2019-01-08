@@ -13,6 +13,7 @@
   (define file-table
     '(
       ("Home"              . "index.rkt")
+      ("Posts"             . "posts.rkt")
       )))
 (require 'files-mod
          (for-syntax 'files-mod))
